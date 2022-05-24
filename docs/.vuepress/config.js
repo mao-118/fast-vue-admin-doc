@@ -11,13 +11,12 @@ module.exports = {
   ],
   base: "/fast-vue-admin-doc",
   lang: "zh-CN",
-  title: "fast-admin",
-  description: "fast-admin中文文档",
+  title: "fast-vue-admin",
+  description: "fast-vue-admin中文文档",
   theme: defaultTheme({
     editLink:false,
     logo:'/images/logo.png',
-    repo: 'https://gitee.com/mao-118/fast-admin',
-    repoLabel:'gitee',
+    repo: 'https://github.com/mao-118/fast-vue-admin',
     navbar: [
       {
         text: "指南",

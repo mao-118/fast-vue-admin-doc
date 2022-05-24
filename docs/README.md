@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /images/logo.png
-heroText: fast-admin
+heroText: fast-vue-admin
 tagline: 基于vue3.0的后台管理系统
 actions:
   - text: 快速上手

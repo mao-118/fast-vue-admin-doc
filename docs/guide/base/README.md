@@ -112,7 +112,7 @@
 
 ```bash
 # 克隆项目
-git clone https://gitee.com/mao-118/fast-admin.git
+git clone https://github.com/mao-118/fast-vue-admin
 
 # 进入项目目录
 cd fast-admin
