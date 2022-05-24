@@ -9,7 +9,7 @@ module.exports = {
       // 配置项
     }),
   ],
-  base: "/fast-admin-doc",
+  base: "/fast-vue-admin-doc",
   lang: "zh-CN",
   title: "fast-admin",
   description: "fast-admin中文文档",
