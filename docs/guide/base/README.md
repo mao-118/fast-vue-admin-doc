@@ -86,7 +86,6 @@
 ├── mock                       # 项目mock 模拟数据
 ├── public                     # 静态资源
 │   │── favicon.ico            # favicon图标
-│   └── index.html             # html模板
 ├── src                        # 源代码
 │   ├── api                    # 所有请求
 │   ├── assets                 # 主题 字体等静态资源
@@ -102,6 +101,7 @@
 │   ├── main.js                # 入口文件 加载组件 初始化等
 ├── .env.xxx                   # 环境变量配置
 ├── .eslintrc.js               # eslint 配置项
+├── index.html                 # html模板
 ├── vite.config.js             # vite 配置
 ├── postcss.config.js          # postcss 配置
 ├── tailwind.config.js         # tailwind 配置 
