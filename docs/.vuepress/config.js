@@ -46,7 +46,8 @@ module.exports = {
           text:'基础',
           children:[
             '/guide/base/README.md',
-            '/guide/base/Layout.md'
+            '/guide/base/Layout.md',
+            '/guide/base/router.md',
           ]
         }
 
