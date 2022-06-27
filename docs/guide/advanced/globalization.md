@@ -10,7 +10,7 @@ app.use(ElementPlus, {
 })
 ```
 
-## 实现国际化
+# 实现国际化
 Element Plus 还提供了一个 Vue 组件 ConfigProvider 用于全局配置国际化的设置。
 
 ```js

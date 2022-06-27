@@ -2,7 +2,7 @@ const { defaultTheme } = require("vuepress");
 const { nprogressPlugin } = require("@vuepress/plugin-nprogress");
 const { docsearchPlugin } = require("@vuepress/plugin-docsearch");
 module.exports = {
-  head: [["link", { rel: "icon", href: "/images/logo.png" }]],
+  head: [["link", { rel: "icon", href: "/fast-vue-admin-doc/images/logo.png" }]],
   plugins: [
     nprogressPlugin(),
     docsearchPlugin({
