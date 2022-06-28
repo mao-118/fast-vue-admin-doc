@@ -1,1 +1,0 @@
-const a={key:"v-24ca4e8e",path:"/guide/advanced/globalization.html",title:"\u56FD\u9645\u5316",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1656321817e3,contributors:[{name:"mao-118",email:"383397258@qq.com",commits:1}]},filePathRelative:"guide/advanced/globalization.md"};export{a as data};
