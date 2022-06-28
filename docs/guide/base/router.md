@@ -11,13 +11,17 @@ hidden: true; // (默认 false)
 
 // 当子路由只有一个时，默认不显示根路由。如果需要显示则将该属性设置为true
 alwaysShow: true;
-
+// 外层父路由设置，默认为1，值越大，渲染菜单越靠后
+sort: 1,
 name: "router-name"; // 设定路由的名字，一定要填写不然使用<keep-alive>时会出现各种问题
 meta: {
   title: "title"; // 设置该路由在侧边栏展示的名字
-  icon: "svg-name"; // 设置该路由的图标，支持 element-plus 的 icon
+  icon: "icon-name"; // 设置该路由的图标，支持 element-plus 的 icon
 }
 ```
+## 自动导入
+本项目采用自动导入的方式，只需要在 [@/router/modules](https://github.com/mao-118/fast-vue-admin/tree/main/src/router/modules) 下创建路由文件即可全部导入。
+通过设置 `sort` 属性来控制菜单渲染时的顺序问题，值越大的越靠后。如果需要动态加载路由的话，请自行修改代码中路由导入逻辑即可。
 ## 模式
 菜单栏分为水平和垂直两种模式。
 

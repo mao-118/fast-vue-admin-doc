@@ -41,7 +41,7 @@
 
 这里使用了 vue-router [路由嵌套](https://router.vuejs.org/zh/guide/essentials/nested-routes.html), 所以一般情况下，你增加或者修改页面只会影响 `app-main`这个主体区域。其它配置在 `layout` 中的内容如：侧边栏或者导航栏都是不会随着你主体页面变化而变化的。
 
-```
+```bash
 /foo                                  /bar
 +------------------+                  +-----------------+
 | layout           |                  | layout          |
@@ -62,7 +62,7 @@
 [@/layout/components/AppMain](https://github.com/mao-118/fast-vue-admin/blob/main/src/layout/components/AppMain.vue)
 :::
 
-这里在 `app-main` 外部包了一层 `keep-alive` 主要是为了缓存 `<router-view>` 的，配合页面的 `tabs-view` 标签导航使用，如不需要可自行[去除](tags-view.md)。
+这里在 `app-main` 外部包了一层 `keep-alive` 主要是为了缓存 `<router-view>` 的，配合页面的 `tags-view` 标签导航使用，如不需要可自行[去除](tags-view.md)。
 
 其中`transition` 定义了页面之间切换动画，可以根据自己的需求，自行修改转场动画。相关[文档](https://staging-cn.vuejs.org/guide/built-ins/transition.html)。默认提供了`fade`和`fade-transform`两个转场动画。如果需要调整可在[AppMain.vue](https://github.com/mao-118/fast-vue-admin/blob/main/src/layout/components/AppMain.vue)中调整`transition` 的 `name`。
 
@@ -72,11 +72,9 @@
 
 **Different router the same component vue** 真实的业务场景中，这种情况很多。比如：
 
-![](https://panjiachen.gitee.io/gitee-cdn/vue-element-admin-site/ac5047c9-cb75-4415-89e3-9386c42f3ef9.jpeg)
-
 我`创建`和`编辑`的页面使用的是同一个 component，默认情况下这两个页面切换时并不会触发 vue 的 created 或者 mounted 钩子，[官方说](https://router.vuejs.org/zh/guide/advanced/data-fetching.html#%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96)你可以通过 watch $route 的变化来进行处理，但说真的还是蛮麻烦的。后来发现其实可以简单的在 `router-view` 上加上一个唯一的 key，来保证路由切换时都会重新渲染触发钩子了。这样简单的多了。
 
-```js
+```vue
 <router-view :key="$route.fullPath"></router-view>
 ```
 

@@ -23,7 +23,7 @@ module.exports = {
         link: "/",
       },
       {
-        text: "项目地址",
+        text: "项目预览",
         link: "https://mao-118.github.io/fast-vue-admin/#/dashboard/index",
       },
       {

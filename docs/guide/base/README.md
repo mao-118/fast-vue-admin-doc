@@ -83,7 +83,7 @@
 git clone https://github.com/mao-118/fast-vue-admin
 
 # 进入项目目录
-cd fast-admin
+cd fast-vue-admin
 
 # 安装依赖
 npm install
@@ -98,7 +98,7 @@ npm run dev
 <br/>
 
 ::: tip
-功能还在完善
+有问题可联系QQ：[383397258]()
 :::
 
 <br/>
@@ -107,7 +107,7 @@ npm run dev
 
 ![图片](/images/dashboard.png)
 
-接下来你可以修改代码进行业务开发了，本项目内建了典型业务模板、常用业务组件、模拟数据、HMR 实时预览、状态管理、国际化、全局路由等等各种实用的功能来辅助开发，你可以继续阅读和探索左侧的其它文档。
+接下来你可以修改代码进行业务开发了，你可以继续阅读和探索左侧的其它文档。
 
 <br/>
 
