@@ -1,5 +1,6 @@
 # 介绍
 [![vue](/images/vue-version.svg)](https://github.com/vuejs/vue)
+[![OSCS Status](https://www.oscs1024.com/platform/badge/mao-118/fast-vue-admin.svg?size=small)](https://www.oscs1024.com/project/mao-118/fast-vue-admin?ref=badge_small)
 <br />
 本项目基于 [vue3](https://staging-cn.vuejs.org/guide/introduction.html) 和 [vite2](https://vitejs.cn/) 搭建,自2022年开始 [vue3](https://staging-cn.vuejs.org/guide/introduction.html) 已经开始作为默认版本。不在建议使用 [vue2](https://cn.vuejs.org/) 的框架， [webpack](https://www.webpackjs.com/) 构建工具也替换为 [vite](https://vitejs.cn/) ，同时该项目全局状态共享从之前的 [Vuex](https://vuex.vuejs.org/) 替换为 [pinia](https://pinia.vuejs.org/introduction.html)
 ## 前序准备
