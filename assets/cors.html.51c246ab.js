@@ -1,1 +1,0 @@
-const e={key:"v-316d958b",path:"/guide/advanced/cors.html",title:"\u8DE8\u57DF\u95EE\u9898",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1656473513e3,contributors:[{name:"mao-118",email:"383397258@qq.com",commits:1}]},filePathRelative:"guide/advanced/cors.md"};export{e as data};
