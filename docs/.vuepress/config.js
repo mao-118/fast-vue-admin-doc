@@ -2,11 +2,16 @@ const { defaultTheme } = require("vuepress");
 const { nprogressPlugin } = require("@vuepress/plugin-nprogress");
 const { docsearchPlugin } = require("@vuepress/plugin-docsearch");
 module.exports = {
-  head: [["link", { rel: "icon", href: "/fast-vue-admin-doc/images/logo.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/fast-vue-admin-doc/images/logo.png" }],
+  ],
   plugins: [
     nprogressPlugin(),
     docsearchPlugin({
       // 配置项
+      appId: 'SZ9GMOED5T',
+      apiKey: 'af42f8ad33967cb468671452abe7c43f',
+      indexName: 'fast-vue-admin',
     }),
   ],
   base: "/fast-vue-admin-doc",
