@@ -9,8 +9,8 @@ module.exports = {
     nprogressPlugin(),
     docsearchPlugin({
       // 配置项
-      appId: 'SZ9GMOED5T',
-      apiKey: 'af42f8ad33967cb468671452abe7c43f',
+      appId: 'O13H2BWEMK',
+      apiKey: 'c7034a17e73fe49d4fcf5a357443a8ae',
       indexName: 'fast-vue-admin',
     }),
   ],
