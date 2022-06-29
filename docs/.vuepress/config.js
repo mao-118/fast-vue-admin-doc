@@ -9,9 +9,15 @@ module.exports = {
     nprogressPlugin(),
     docsearchPlugin({
       // 配置项
-      appId: 'O13H2BWEMK',
-      apiKey: 'c7034a17e73fe49d4fcf5a357443a8ae',
-      indexName: 'fast-vue-admin',
+      appId: "SZ9GMOED5T",
+      apiKey: "a47ff55e08e55b4e2d4e95ede6d54eaa",
+      indexName: "fast-vue-admin",
+      placeholder:'搜索文档',
+      translations: {
+        button: {
+          buttonText: '搜索文档',
+        },
+      },
     }),
   ],
   base: "/fast-vue-admin-doc",
