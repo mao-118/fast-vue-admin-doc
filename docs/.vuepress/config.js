@@ -10,7 +10,7 @@ module.exports = {
     docsearchPlugin({
       // 配置项
       appId: "SZ9GMOED5T",
-      apiKey: "a47ff55e08e55b4e2d4e95ede6d54eaa",
+      apiKey: "af42f8ad33967cb468671452abe7c43f",
       indexName: "fast-vue-admin",
       placeholder:'搜索文档',
       translations: {
