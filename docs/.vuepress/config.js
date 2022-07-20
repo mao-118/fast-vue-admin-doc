@@ -1,24 +1,27 @@
 const { defaultTheme } = require("vuepress");
 const { nprogressPlugin } = require("@vuepress/plugin-nprogress");
-const { docsearchPlugin } = require("@vuepress/plugin-docsearch");
+const { searchPlugin } = require('@vuepress/plugin-search')
+// const { docsearchPlugin } = require("@vuepress/plugin-docsearch");
 module.exports = {
   head: [
     ["link", { rel: "icon", href: "/fast-vue-admin-doc/images/logo.png" }],
   ],
   plugins: [
     nprogressPlugin(),
-    docsearchPlugin({
-      // 配置项
-      appId: "SZ9GMOED5T",
-      apiKey: "af42f8ad33967cb468671452abe7c43f",
-      indexName: "fast-vue-admin",
-      placeholder:'搜索文档',
-      translations: {
-        button: {
-          buttonText: '搜索文档',
-        },
-      },
-    }),
+    searchPlugin({
+    })
+    // docsearchPlugin({
+    //   // 配置项
+    //   appId: "SZ9GMOED5T",
+    //   apiKey: "af42f8ad33967cb468671452abe7c43f",
+    //   indexName: "fast-vue-admin",
+    //   placeholder:'搜索文档',
+    //   translations: {
+    //     button: {
+    //       buttonText: '搜索文档',
+    //     },
+    //   },
+    // }),
   ],
   base: "/fast-vue-admin-doc",
   lang: "zh-CN",
