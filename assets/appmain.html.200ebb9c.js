@@ -1,0 +1,1 @@
+const e={key:"v-4323f65e",path:"/guide/base/appmain.html",title:"app-main",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"Emptyout",slug:"emptyout",children:[]}],git:{updatedTime:1661068103e3,contributors:[{name:"mao-118",email:"383397258@qq.com",commits:1}]},filePathRelative:"guide/base/appmain.md"};export{e as data};
