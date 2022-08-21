@@ -9,11 +9,11 @@
 // 当设置 true 的时候该路由不会在侧边栏出现 如401，login等页面，或者如一些编辑页面/edit/1
 hidden: true; // (默认 false)
 
-// 当子路由只有一个时，默认不显示根路由。如果需要显示则将该属性设置为true
-alwaysShow: true;
+// 当子路由只有一个时，且设置了该属性，则当前路由信息将隐藏
+hasOnleOneChildren: true;
 // 外层父路由设置，默认为1，值越大，渲染菜单越靠后
 sort: 1,
-name: "router-name"; // 设定路由的名字，一定要填写不然使用<keep-alive>时会出现各种问题
+name: "router-name"; // 设定路由的名字，一定要填写不然使用<keep-alive>时会出现问题
 meta: {
   title: "title"; // 设置该路由在侧边栏展示的名字
   icon: "icon-name"; // 设置该路由的图标，支持 element-plus 的 icon
@@ -25,6 +25,6 @@ meta: {
 ## 模式
 菜单栏分为水平和垂直两种模式。
 
-水平模式：当切换为水平模式，侧边栏展示的是当前父路由下的子级路由列表，这个时候 `alwaysShow` 属性始终为 `true`
+水平模式：当切换为水平模式，侧边栏展示的是当前父路由下的子级路由列表，这个时候第一级的 `hasOnleOneChildren` 属性始终为 `false`,其他规则同`垂直模式`。
 
-垂直模式：基于 `element-plus` 的 `el-menu` 改造,支持多级路由嵌套
+垂直模式：基于 `element-plus` 的 `el-menu` 改造,支持多级路由嵌套。

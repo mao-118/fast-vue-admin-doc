@@ -66,12 +66,17 @@ module.exports = {
             "/guide/base/README.md",
             "/guide/base/Layout.md",
             "/guide/base/router.md",
+            "/guide/base/navbar.md",
+            "/guide/base/appmain.md",
+            "/guide/base/components.md",
             "/guide/base/mock.md",
           ],
         },
         {
           text: "进阶",
           children: [
+            "/guide/advanced/composite-api.md",
+            "/guide/advanced/keep-alive.md",
             "/guide/advanced/theme.md",
             "/guide/advanced/cors.md",
             "/guide/advanced/globalization.md",

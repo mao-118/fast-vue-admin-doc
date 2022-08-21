@@ -5,7 +5,7 @@
 本项目基于 [vue3](https://staging-cn.vuejs.org/guide/introduction.html) 和 [vite2](https://vitejs.cn/) 搭建,自2022年开始 [vue3](https://staging-cn.vuejs.org/guide/introduction.html) 已经开始作为默认版本。不在建议使用 [vue2](https://cn.vuejs.org/) 的框架， [webpack](https://www.webpackjs.com/) 构建工具也替换为 [vite](https://vitejs.cn/) ，同时该项目全局状态共享从之前的 [Vuex](https://vuex.vuejs.org/) 替换为 [pinia](https://pinia.vuejs.org/introduction.html)
 ## 前序准备
 - 你需要在本地安装 [node](http://nodejs.org/) 和 [git](https://git-scm.com/)。
-- 希望你具备 [vue2](https://cn.vuejs.org/) 的常用知识，这样可以直接过渡到 [vue3](https://staging-cn.vuejs.org/guide/introduction.html) 。如果没有也无关紧要，可以直接从 [vue3](https://staging-cn.vuejs.org/guide/introduction.html) 开始学习，毕竟 [vue3](https://staging-cn.vuejs.org/guide/introduction.html) 已经开始为主流版本。
+- 希望你具备 [vue2](https://cn.vuejs.org/) 的常用知识，这样可以直接过渡到 [vue3](https://staging-cn.vuejs.org/guide/introduction.html) 。如果没有也无关紧要，可以直接从 [vue3](https://staging-cn.vuejs.org/guide/introduction.html) 开始学习，毕竟 [vue3](https://staging-cn.vuejs.org/guide/introduction.html) 已经开始成为主流版本。
 - 掌握 [ES2015+](https://es6.ruanyifeng.com/)、[vue3](https://staging-cn.vuejs.org/guide/introduction.html)、[pinia](https://pinia.vuejs.org/introduction.html)、[vue-router](https://router.vuejs.org/) 、[vite2](https://vitejs.cn/) 、[axios](http://www.axios-js.com/zh-cn/docs/) 和 [element-plus](https://element-plus.gitee.io/zh-CN/guide/design.html) 等技术。
 - 所有的请求数据都使用 [Mock.js](http://mockjs.com/) 进行模拟，提前了解和学习这些知识会对使用本项目有很大的帮助。
 
@@ -40,6 +40,8 @@
   - Dashboard
   - ECharts 图表
   - Clipboard(剪贴复制)
+  - 多级缓存
+  - 国际化
 ```
 
 <br/>
@@ -56,7 +58,7 @@
 │   │── favicon.ico            # favicon图标
 ├── src                        # 源代码
 │   ├── api                    # 所有请求
-│   ├── assets                 # 主题 字体等静态资源
+│   ├── assets                 # 图片 字体等静态资源
 │   ├── components             # 全局公用组件
 │   ├── directive              # 全局指令
 │   ├── layout                 # 全局 layout
@@ -106,7 +108,7 @@ npm run dev
 
 启动完成后会自动打开浏览器访问 [http://localhost:9999](http://localhost:9999)， 你看到下面的页面就代表操作成功了。
 
-![图片](/images/dashboard.png)
+![图片](/images/login.png)
 
 接下来你可以修改代码进行业务开发了，你可以继续阅读和探索左侧的其它文档。
 
@@ -128,7 +130,7 @@ npm run dev
 
 3. [Vue Dev-Tools](https://github.com/vuejs/vue-devtools) Vue 在浏览器下的调试工具。写 vue 必备的一个浏览器插件，能大大的提高你调试的效率。
 
-4. [vite](https://vitejs.cn/) 是一种新型前端构建工具，能够显著提升前端开发体验。它主要由两部分组成：一个开发服务器，它基于 原生 ES 模块 提供了 丰富的内建功能，如速度快到惊人的 模块热更新（HMR）。一套构建指令，它使用 Rollup 打包你的代码，并且它是预配置的，可输出用于生产环境的高度优化过的静态资源。Vite 意在提供开箱即用的配置，同时它的 插件 API 和 JavaScript API 带来了高度的可扩展性，并有完整的类型支持。
+4. [vite](https://vitejs.cn/) 是一个轻量级的、速度极快的构建工具，对 Vue SFC 提供第一优先级支持。作者是尤雨溪，同时也是 Vue 的作者！
 
-5. [Vetur](https://github.com/vuejs/vetur) 是 VS Code 的插件. 如果你使用 VS Code 来写 vue 的话，这个插件是必不可少的。
+5. [Volar](https://github.com/johnsoncodehk/volar) 与vetur相同，volar是一个针对vue的vscode插件，不过与vetur不同的是，volar提供了更为强大的功能。
 

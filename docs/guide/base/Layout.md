@@ -68,16 +68,6 @@
 
 <br>
 
-## router-view
-
-**Different router the same component vue** 真实的业务场景中，这种情况很多。比如：
-
-我`创建`和`编辑`的页面使用的是同一个 component，默认情况下这两个页面切换时并不会触发 vue 的 created 或者 mounted 钩子，[官方说](https://router.vuejs.org/zh/guide/advanced/data-fetching.html#%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96)你可以通过 watch $route 的变化来进行处理，但说真的还是蛮麻烦的。后来发现其实可以简单的在 `router-view` 上加上一个唯一的 key，来保证路由切换时都会重新渲染触发钩子了。这样简单的多了。
-
-```vue
-<router-view :key="$route.fullPath"></router-view>
-```
-
 
 ## 移动端
 
